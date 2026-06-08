@@ -41,7 +41,7 @@
     .hero{min-height:100vh;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding-bottom:100px}
     .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 65% at 22% 58%,#1b1a15 0%,#11110e 100%)}
     .hero-bg::after{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.68' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");background-size:256px;opacity:0.03;pointer-events:none}
-    .hero-photo{position:absolute;right:0;top:0;bottom:0;width:44%;clip-path:polygon(16% 0,100% 0,100% 100%,0% 100%);background:linear-gradient(150deg,#1e1d16 0%,#141311 55%,#1a1815 100%);display:flex;align-items:center;justify-content:center}
+    .hero-photo{position:absolute;right:0;top:0;bottom:0;width:44%;clip-path:polygon(16% 0,100% 0,100% 100%,0% 100%);background-image:url('a5.jpg');background-size:cover;background-position:center}
     .hero-photo::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 60px,rgba(255,255,255,0.008) 60px,rgba(255,255,255,0.008) 61px)}
     .photo-label{position:relative;z-index:1;text-align:center;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);line-height:2.2}
     .hero-content{position:relative;z-index:2;max-width:620px}
@@ -107,6 +107,10 @@
     .footer-col a:hover{color:var(--limestone)}
     .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
     .footer-bottom p{font-size:0.75rem;color:var(--muted)}
+
+    .photo-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--dark)}
+    .photo-strip img{width:100%;aspect-ratio:1;object-fit:cover;display:block;filter:brightness(0.85) contrast(1.05)}
+    @media(max-width:700px){.photo-strip{grid-template-columns:repeat(2,1fr)}}
   </style>
 </head>
 <body>
@@ -130,9 +134,7 @@
   <section class="hero">
     <div class="hero-bg"></div>
     <!-- PHOTOGRAPHY: unveiling ceremony, a stone plaque behind red velvet, hands about to pull the cord, formal setting with daylight -->
-    <div class="hero-photo" aria-hidden="true">
-      <p class="photo-label">Photography<br>Ceremony · Unveiling · Detail<br>Formal setting, natural light</p>
-    </div>
+    <div class="hero-photo" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-content">
         <span class="label">Stone Studio │ Ceremonial</span>
@@ -185,6 +187,13 @@
     </div>
   </section>
 
+
+  <div class="photo-strip" aria-hidden="true">
+    <img src="9.jpg" alt="">
+    <img src="18.jpg" alt="">
+    <img src="22.jpg" alt="">
+    <img src="23.jpg" alt="">
+  </div>
   <section class="bg-dark-s" id="services">
     <div class="container">
       <div class="section-header">
