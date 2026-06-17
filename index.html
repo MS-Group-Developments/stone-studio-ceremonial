@@ -9,14 +9,14 @@
   <link rel="canonical" href="https://ceremonial.thestonestudio.co/">
   <meta property="og:title" content="Stone Studio Ceremonial — Foundation stones, commemorative plaques and civic stone">
   <meta property="og:description" content="Ceremonial stone for official openings, unveilings and civic occasions. Foundation stones, commemorative plaques and dedication markers made in Cardiff.">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Josefin+Sans:wght@300;700&display=swap" rel="stylesheet">
   <style>
     :root{--bg:#F6F3EE;--bg-s:#EAE7E1;--fg:#191713;--mid:#7D7267;--rule:#D4CFCA;--stone:#8C7C6A}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{background:var(--bg);color:var(--fg);font-family:'Inter',sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
-    h1{font-size:clamp(2.6rem,5.5vw,5rem);font-weight:300;line-height:1.06;letter-spacing:-0.03em;color:var(--fg)}
-    h2{font-size:clamp(1.8rem,3.5vw,3rem);font-weight:300;line-height:1.08;letter-spacing:-0.025em;color:var(--fg)}
+    h1{font-size:clamp(2.6rem,5.5vw,5rem);font-weight:300;line-height:1.06;letter-spacing:-0.03em;color:var(--fg);font-family:'Josefin Sans',sans-serif}
+    h2{font-size:clamp(1.8rem,3.5vw,3rem);font-weight:300;line-height:1.08;letter-spacing:-0.025em;color:var(--fg);font-family:'Josefin Sans',sans-serif}
     h3{font-size:0.95rem;font-weight:500;color:var(--fg);letter-spacing:0.01em}
     p{color:var(--mid);line-height:1.8;font-size:0.94rem}
     a{color:inherit;text-decoration:none}
@@ -26,7 +26,7 @@
     nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 64px;display:flex;align-items:center;justify-content:space-between;background:rgba(246,243,238,0.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--rule)}
     @media(max-width:768px){nav{padding:14px 24px}}
     .nav-logo{display:block;line-height:0}
-    .nav-logo svg{height:26px;width:auto}
+    .nav-logo svg{height:49px;width:auto}
     .nav-links{display:flex;gap:32px;list-style:none}
     @media(max-width:960px){.nav-links{display:none}}
     .nav-links a{font-size:0.62rem;font-weight:400;letter-spacing:0.2em;text-transform:uppercase;color:var(--mid);transition:color 0.2s}
@@ -37,7 +37,7 @@
     @media(max-width:900px){.hero{grid-template-columns:1fr;min-height:auto}}
     .hero-text{display:flex;flex-direction:column;justify-content:center;padding:88px 80px 88px 64px}
     @media(max-width:900px){.hero-text{padding:56px 24px 48px}}
-    .hero-text h1{margin:14px 0 20px}
+    .hero-text h1{margin:14px 0 20px;font-family:'Josefin Sans',sans-serif}
     .hero-text p{font-size:1rem;max-width:340px;color:var(--mid)}
     .hero-photo{background-size:cover;background-position:center;min-height:520px}
     @media(max-width:900px){.hero-photo{min-height:58vw;order:-1}}
@@ -78,7 +78,7 @@
     .pillar h3{font-size:0.95rem;font-weight:500;margin-bottom:8px}
     .pillar p{font-size:0.82rem;line-height:1.72}
     .cta-s{text-align:center}
-    .cta-s h2{max-width:580px;margin:14px auto 14px}
+    .cta-s h2{max-width:580px;margin:14px auto 14px;font-family:'Josefin Sans',sans-serif}
     .cta-s p{max-width:420px;margin:0 auto 36px;font-size:0.95rem}
     .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
     .btn{display:inline-block;font-size:0.6rem;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;padding:13px 36px;border:1px solid var(--fg);color:var(--fg);transition:all 0.2s}
@@ -126,10 +126,10 @@
       <g>
         <path class="cls-1" d="M141.32,82.94c-.21.17-.59.41-1.15.7-.56.29-1.25.55-2.06.78-.81.22-1.71.33-2.69.31-1.5-.03-2.84-.31-4.03-.82s-2.18-1.2-3-2.08c-.82-.88-1.45-1.89-1.88-3.03-.43-1.14-.65-2.36-.65-3.65,0-1.45.22-2.78.66-3.99s1.07-2.25,1.89-3.13c.82-.88,1.8-1.56,2.94-2.05,1.14-.48,2.4-.72,3.78-.72,1.28,0,2.41.17,3.39.52.98.35,1.79.72,2.41,1.11l-1.48,3.55c-.43-.33-1.01-.67-1.72-1.02-.72-.35-1.54-.53-2.47-.53-.73,0-1.42.15-2.08.45-.67.3-1.25.73-1.76,1.28-.51.55-.91,1.2-1.2,1.93-.29.73-.44,1.53-.44,2.4,0,.92.13,1.75.4,2.51s.65,1.41,1.15,1.96,1.1.96,1.8,1.26,1.49.44,2.37.44c1.02,0,1.89-.16,2.62-.49.72-.33,1.28-.67,1.66-1.04l1.55,3.37Z"/>
         <path class="cls-1" d="M150.25,65.46h13v3.62h-9.25v4.07h8.18v3.62h-8.18v4.12h9.61v3.63h-13.36v-19.06Z"/>
-        <path class="cls-1" d="M178.46,65.46c1.19,0,2.25.15,3.18.45.93.3,1.71.73,2.34,1.29.63.56,1.11,1.23,1.44,2.02.33.79.49,1.67.49,2.65,0,.78-.12,1.55-.35,2.33c-.23.78-.61,1.49-1.14,2.12-.53.64-1.22,1.15-2.08,1.54s-1.93.58-3.21.58h-2.69v6.06h-3.75v-19.06h5.78ZM179.1,74.84c.57,0,1.04-.09,1.42-.28.38-.19.68-.43.89-.73.22-.29.37-.6.47-.92s.14-.62.14-.89c0-.21-.03-.47-.09-.79s-.19-.64-.38-.97c-.19-.33-.48-.6-.87-.83-.39-.22-.91-.34-1.57-.34h-2.69v5.75h2.67ZM182.62,77.17l4.71,7.35h-4.38l-4.82-7.25,4.48-.1Z"/>
+        <path class="cls-1" d="M178.46,65.46c1.19,0,2.25.15,3.18.45.93.3,1.71.73,2.34,1.29.63.56,1.11,1.23,1.44,2.02.33.79.49,1.67.49,2.65,0,.78-.12,1.55-.35,2.33-.23.78-.61,1.49-1.14,2.12-.53.64-1.22,1.15-2.08,1.54s-1.93.58-3.21.58h-2.69v6.06h-3.75v-19.06h5.78ZM179.1,74.84c.57,0,1.04-.09,1.42-.28.38-.19.68-.43.89-.73.22-.29.37-.6.47-.92s.14-.62.14-.89c0-.21-.03-.47-.09-.79s-.19-.64-.38-.97c-.19-.33-.48-.6-.87-.83-.39-.22-.91-.34-1.57-.34h-2.69v5.75h2.67ZM182.62,77.17l4.71,7.35h-4.38l-4.82-7.25,4.48-.1Z"/>
         <path class="cls-1" d="M195.62,65.46h13v3.62h-9.25v4.07h8.18v3.62h-8.18v4.12h9.61v3.63h-13.36v-19.06Z"/>
-        <path class="cls-1" d="M218.05,84.52v-19.84h.03l10.59,15.02-1.61-.36,10.57-14.66h.05v19.84h-3.75v-11.37l.23,1.94-6.45,9.17h-.05l-6.63-9.17,.65-1.79v11.21h-3.63Z"/>
-        <path class="cls-1" d="M246.61,75.02c0-1.31.25-2.55.75-3.73.5-1.17,1.2-2.21,2.08-3.12.89-.91,1.92-1.62,3.09-2.14,1.17-.52,2.43-.78,3.78-.78s2.58.26,3.75.78c1.17.52,2.21,1.23,3.12,2.14.91.91,1.61,1.95,2.12,3.12.51,1.17.76,2.42.76,3.73s-.25,2.61-.76,3.78c-.51,1.17-1.22,2.21-2.12,3.09-.91.89-1.95,1.58-3.12,2.08-1.17.5-2.43.75-3.75.75s-2.61-.25-3.78-.75c-1.17-.5-2.21-1.2-3.09-2.08-.89-.89-1.58-1.92-2.08-3.09-.5-1.17-.75-2.43-.75-3.78ZM250.5,75.02c0,.85.15,1.64.45,2.37.3.73.72,1.38,1.27,1.94.54.56,1.17,1,1.89,1.31.72.31,1.5.47,2.34.47s1.57-.16,2.27-.47c.7-.31,1.31-.75,1.83-1.31.52-.56.92-1.21,1.22-1.94.29-.73.44-1.52.44-2.37s-.15-1.67-.45-2.41c-.3-.74-.72-1.39-1.24-1.96c-.53-.56-1.14-1-1.85-1.31c-.71-.31-1.48-.47-2.3-.47s-1.6.16-2.3.47c-.71.31-1.33.75-1.87,1.31c-.54.56-.95,1.21-1.24,1.96c-.29.74-.44,1.54-.44,2.41Z"/>
+        <path class="cls-1" d="M218.05,84.52v-19.84h.03l10.59,15.02-1.61-.36,10.57-14.66h.05v19.84h-3.75v-11.37l.23,1.94-6.45,9.17h-.05l-6.63-9.17.65-1.79v11.21h-3.63Z"/>
+        <path class="cls-1" d="M246.61,75.02c0-1.31.25-2.55.75-3.73.5-1.17,1.2-2.21,2.08-3.12.89-.91,1.92-1.62,3.09-2.14,1.17-.52,2.43-.78,3.78-.78s2.58.26,3.75.78c1.17.52,2.21,1.23,3.12,2.14.91.91,1.61,1.95,2.12,3.12.51,1.17.76,2.42.76,3.73s-.25,2.61-.76,3.78c-.51,1.17-1.22,2.21-2.12,3.09-.91.89-1.95,1.58-3.12,2.08-1.17.5-2.43.75-3.75.75s-2.61-.25-3.78-.75c-1.17-.5-2.21-1.2-3.09-2.08-.89-.89-1.58-1.92-2.08-3.09-.5-1.17-.75-2.43-.75-3.78ZM250.5,75.02c0,.85.15,1.64.45,2.37.3.73.72,1.38,1.27,1.94.54.56,1.17,1,1.89,1.31.72.31,1.5.47,2.34.47s1.57-.16,2.27-.47c.7-.31,1.31-.75,1.83-1.31.52-.56.92-1.21,1.22-1.94.29-.73.44-1.52.44-2.37s-.15-1.67-.45-2.41c-.3-.74-.72-1.39-1.24-1.96-.53-.56-1.14-1-1.85-1.31-.71-.31-1.48-.47-2.3-.47s-1.6.16-2.3.47c-.71.31-1.33.75-1.87,1.31-.54.56-.95,1.21-1.24,1.96-.29.74-.44,1.54-.44,2.41Z"/>
         <path class="cls-1" d="M292.09,85.3l-14.45-13.05,1.11.62.08,11.65h-3.81v-19.81h.16l14.14,13-.83-.36-.08-11.89h3.78v19.84h-.1Z"/>
         <path class="cls-1" d="M302.29,65.46h3.75v19.06h-3.75v-19.06Z"/>
         <path class="cls-1" d="M314,84.52l8.6-19.81h.21l8.6,19.81h-4.35l-5.49-13.93,2.72-1.86-6.58,15.8h-3.7ZM319.87,77.63h5.72l1.32,3.16h-8.21l1.17-3.16Z"/>
@@ -145,7 +145,7 @@
   <section class="hero">
     <div class="hero-text">
       <span class="label">Stone Studio · Ceremonial</span>
-      <h1>The unveiling is
+      <h1><span style="font-weight:700">The</span> unveiling is
 the moment. We make
 the piece.</h1>
       <p>Stone for ceremonies, commemorations and civic occasions.</p>
@@ -165,7 +165,7 @@ the piece.</h1>
       <div class="two-col">
         <div>
           <span class="label">Ceremonial</span>
-          <h2>Marking a moment permanently.</h2>
+          <h2><span style="font-weight:700">Marking</span> a moment permanently.</h2>
         </div>
         <div>
           <p>Foundation stones, commemorative plaques, civic ceremony pieces and opening markers. Work made for occasions that should never be forgotten.</p>
@@ -178,7 +178,7 @@ the piece.</h1>
   <section class="bg-s bt" id="services">
     <div class="c">
       <span class="label">Services</span>
-      <h2>What we make</h2>
+      <h2><span style="font-weight:700">What</span> we make</h2>
       <div class="svc-grid">
         <div class="svc"><h3>Foundation stones</h3><p>Laid-in foundation stones with carved inscription for buildings, bridges and civic infrastructure.</p></div>
         <div class="svc"><h3>Opening &amp; unveiling plaques</h3><p>Wall-mounted and freestanding plaques for official openings, royal visits and civic ceremonies.</p></div>
@@ -193,7 +193,7 @@ the piece.</h1>
   <section class="bt cta-s" id="contact">
     <div class="c">
       <span class="label">Start a conversation</span>
-      <h2>Tell us about your project.</h2>
+      <h2><span style="font-weight:700">Tell</span> us about your project.</h2>
       <p>We&rsquo;ll work out together where we fit.</p>
       <div class="cta-row">
         <a href="mailto:hello@stonesign.co.uk" class="btn">hello@stonesign.co.uk</a>
